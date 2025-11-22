@@ -64,6 +64,15 @@ html,body{
   box-shadow:0 10px 40px rgba(15,23,36,0.08);
   padding:28px;
 }
+a {
+  text-decoration: none; /* يزيل الخط من جميع الروابط */
+  color: inherit; /* يبقي اللون كما هو */
+}
+
+.link-text {
+  text-decoration: none;
+}
+
 .card h3{margin:0 0 6px 0;font-size:20px}
 .card p.lead{margin:0 0 18px 0;color:var(--muted);font-size:14px}
 .form-group{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
