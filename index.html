@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login — faissal web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="darkToggle" class="dark-btn">Dark mode</button>
+<main class="wrap">
+  <section class="hero" aria-hidden="true">
+    <div class="brand">
+      <div class="logo">F</div>
+      <div><h1>faissal web</h1><div class="small">واجهة تسجيل دخول — تصميم حديث وأنيق</div></div>
+    </div>
+    <h2>مرحباً بعودتك!</h2>
+    <p>تجربة تسجيل سريعة وآمنة مع تصميم متناسق لكل الشاشات.</p>
+  </section>
+
+  <section class="card" role="region" aria-label="نموذج تسجيل الدخول">
+    <h3>تسجيل الدخول</h3>
+    <p class="lead">استخدم بريدك الإلكتروني أو حسابات التواصل.</p>
+    <form id="loginForm" novalidate>
+      <div class="form-group">
+        <label for="email">البريد الإلكتروني</label>
+        <input id="email" name="email" type="email" placeholder="example@mail.com" required />
+        <div id="emailMsg" class="error" aria-live="polite"></div>
+      </div>
+      <div class="form-group">
+        <label for="password">كلمة المرور</label>
+        <input id="password" name="password" type="password" placeholder="••••••••" minlength="6" required />
+        <div id="passMsg" class="error" aria-live="polite"></div>
+      </div>
+      <div class="actions">
+        <div style="display:flex;gap:12px;align-items:center">
+          <input id="remember" type="checkbox" />
+          <label for="remember" class="small">تذكرني</label>
+        </div>
+        <a href="#" id="forgot-link" class="link-text">هل نسيت كلمة المرور؟</a>
+      </div>
+      <div style="margin-top:16px;display:flex;gap:10px">
+        <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+        <button type="button" class="btn btn-ghost" id="demoBtn">تجربة</button>
+      </div>
+      <div class="divider" aria-hidden="true"></div>
+      <div style="font-size:14px;line-height:1.5;color:#4b5563">
+        لا تملك حساب؟ <a href="#" id="signup-link" class="link-text">إنشاء حساب جديد</a>
+      </div>
+    </form>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
